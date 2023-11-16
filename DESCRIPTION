@@ -1,11 +1,23 @@
 Package: regressionhelper
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Implement linear regression method
 Version: 0.1.0
 Author: Kexin Guo
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Maintainer: Kexin Guo <kexinguo@umich.edu>
+Description: This package includes functions that computing all needed values from a linear regression.
+    getBetaHat estimates the coefficients (Beta Hat) of a linear regression model.
+    getResidual calculates the residuals of a linear regression model.
+    getRsquare calculates the R-Square (coefficient of determination) of a linear regression model.
+    getF returns the F-statistic and p-value for a F-test of the linear regression model as a list.
+    getT returns T-statistic, standard error, p-value and statistical decision of T-tests for every coefficientin the linear regression model as a list.
+License: GPL(>=3)
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    bench,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppEigen 
