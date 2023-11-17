@@ -18,7 +18,8 @@ Suggests:
     knitr,
     bench,
     rmarkdown,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    covr
 VignetteBuilder: knitr
 LinkingTo: Rcpp, RcppEigen 
 Config/testthat/edition: 3

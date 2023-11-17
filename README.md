@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/kxkx0822/regression_helper/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kxkx0822/regression_helper/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/kxkx0822/regression_helper/branch/main/graph/badge.svg)](https://app.codecov.io/gh/kxkx0822/regression_helper?branch=main)
 <!-- badges: end -->
 
 The goal of regressionhelper is to ...
@@ -22,6 +23,21 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(regressionhelper)
-## basic example code
+# Example 1: Getting Beta Hat
+mat <- matrix(rnorm(10), ncol = 2)
+y <- 2 * mat[, 1] + 3 * mat[, 2] + rnorm(50)
+RcppgetBetaHat(mat, y)
+
+# Example 2: Getting Residuals
+RcppgetResidual(mat, y)
+
+# Example 3: Getting R-squared
+RcppgetRsquare(mat, y)
+
+# Example 4: Getting F-statistic
+RcppgetF(mat, y)
+
+# Example 5: Getting T-statistics and P-values
+RcppgetT(mat, y)
 ```
 

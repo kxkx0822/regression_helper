@@ -12,6 +12,7 @@ test_that("My function does this", {
   pvalue = as.numeric(coeff[, "Pr(>|t|)"])
   decision = ifelse(pvalue < 0.05, "sig", "non-sig")
   expected =list(t_stat = t_stat, se = se, `p-values` = pvalue, Decisions = decision)
+
   # Check t_stat
   expect_equal(result$t_stat, expected$t_stat, tolerance = 1e-5)
 
@@ -22,5 +23,5 @@ test_that("My function does this", {
   expect_equal(result$p_values, expected$p_values, tolerance = 1e-5)
 
   # Check Decisions
-  expect_equal(result$Decisions, expected$Decisions, tolerance = 1e-5)
+  expect_true(identical(as.character(result$Decisions), as.character(expected$Decisions)))
 })
