@@ -5,41 +5,41 @@
 NULL
 
 addColumnOfOnes <- function(mat) {
-    .Call('_regressionhelper_addColumnOfOnes', PACKAGE = 'regressionhelper', mat)
+    .Call(`_regressionhelper_addColumnOfOnes`, mat)
 }
 
 #'
 NULL
 
 getBetaHat <- function(mat, y) {
-    .Call('_regressionhelper_getBetaHat', PACKAGE = 'regressionhelper', mat, y)
+    .Call(`_regressionhelper_getBetaHat`, mat, y)
 }
 
 #'
 NULL
 
 getF <- function(mat, y) {
-    .Call('_regressionhelper_getF', PACKAGE = 'regressionhelper', mat, y)
+    .Call(`_regressionhelper_getF`, mat, y)
 }
 
 #'
 NULL
 
 getResidual <- function(mat, y) {
-    .Call('_regressionhelper_getResidual', PACKAGE = 'regressionhelper', mat, y)
+    .Call(`_regressionhelper_getResidual`, mat, y)
 }
 
 #'
 NULL
 
 getRsquare <- function(mat, y) {
-    .Call('_regressionhelper_getRsquare', PACKAGE = 'regressionhelper', mat, y)
+    .Call(`_regressionhelper_getRsquare`, mat, y)
 }
 
 #'
 NULL
 
 getT <- function(mat, y) {
-    .Call('_regressionhelper_getT', PACKAGE = 'regressionhelper', mat, y)
+    .Call(`_regressionhelper_getT`, mat, y)
 }
 
