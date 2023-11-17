@@ -6,7 +6,7 @@
 [![Codecov test coverage](https://codecov.io/gh/kxkx0822/regression_helper/branch/main/graph/badge.svg)](https://app.codecov.io/gh/kxkx0822/regression_helper?branch=main)
 <!-- badges: end -->
 
-The goal of regressionhelper is to ...
+The goal of regressionhelper is to generate the usually needed results of a linear regression model.
 
 ## Installation
 
