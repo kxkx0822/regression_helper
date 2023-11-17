@@ -41,3 +41,15 @@ RcppgetF(mat, y)
 RcppgetT(mat, y)
 ```
 
+## Efficiency check
+
+The following is a running time comparison example of function "RcppgatBetaHat" from regressionhelper and function "lm" in R base library
+
+``` r
+A tibble: 2 × 13
+  expression      min   median `itr/sec` mem_alloc `gc/sec` n_itr  n_gc total_time result
+  <bch:expr> <bch:tm> <bch:tm>     <dbl> <bch:byt>    <dbl> <int> <dbl>   <bch:tm> <list>
+1 lm_        465.45µs 508.32µs     1956.   24.38KB     6.39   919     3    469.8ms <dbl> 
+2 RcppgetBe…   4.69µs   5.44µs   174325.    4.88KB    17.4   9999     1     57.4ms <dbl> 
+```
+
